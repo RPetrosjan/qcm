@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello IndexController!{% endblock %}
+
+{% block body %}
+    <div class="row">
+        <div class="col-12">
+            <div class="border-bottom">
+                <div class="card-body">
+                    <h5 class="card-title title-yantramanav m-0">Symfony</h5>
+                    <p class="card-text mb-2">{{ "prepar.certificate.symfon4"|trans }}</p>
+                    <a href="{{ path('symfony_certifiacte') }}" class="btn btn-success py-1 px-4">Get Started</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="border-bottom">
+                <div class="card-body">
+                    <h5 class="card-title title-yantramanav m-0">PHP</h5>
+                    <p class="card-text mb-2">{{ "prepar.certificate.php7"|trans }}</p>
+                    <a href="#" class="btn btn-success py-1 px-4">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

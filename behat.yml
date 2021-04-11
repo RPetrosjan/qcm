@@ -1,0 +1,20 @@
+default:
+    suites:
+        default:
+            contexts:
+                - FeatureContext
+                - Behat\MinkExtension\Context\MinkContext
+                - Behatch\Context\DebugContext
+    extensions:
+        FriendsOfBehat\SymfonyExtension:
+            bootstrap: 'config/behat/bootstrap.php'
+        Behat\MinkExtension:
+            base_url: 'http://qcm.local/fr/'
+            browser_name: chrome
+            javascript_session: chrome_javascript_session
+            sessions:
+                chrome_javascript_session:
+                    selenium2:
+                        wd_host: "http://127.0.0.1:4444/wd/hub"
+                default:
+                    goutte: ~

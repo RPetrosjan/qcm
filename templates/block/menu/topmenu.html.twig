@@ -1,0 +1,15 @@
+{% block stylesheets %}
+    {{ encore_entry_link_tags('topmenupanel') }}
+{% endblock %}
+
+<div class="row topmenupanel">
+    <div class="col-md-9">
+    </div>
+    <div class="col-md-3 text-right">
+        <select class="selectpicker" onchange="location = this.value;">
+            {% for key,value in locales %}
+                <option {% if app.request.locale == key %}selected{% endif%} value="{{ path(app.request.get('_route'), {'_locale': key}) }}">{{ value }}</option>
+            {% endfor %}
+        </select>
+    </div>
+</div>

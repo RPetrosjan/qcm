@@ -1,0 +1,16 @@
+body{
+}
+
+@import "~bootstrap";
+@import "/~bootstrap-select/sass/bootstrap-select";
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+.title-yantramanav{
+  font-family: 'Yantramanav', sans-serif;
+}
+
+.btn{
+  font-family: 'Patua One', cursive;
+  font-size: 0.8em;
+}
