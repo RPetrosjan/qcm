@@ -1,6 +1,19 @@
 prepar.certificate.symfon4:  "Préparation pour certificat Symfony 4"
 prepar.certificate.php7:  "Préparation pour certificat PHP 7"
 validate: 'Valider'
-
-
-
+User: 'Utilisateur'
+Users : 'Utilisateurs'
+email: 'Email'
+name: 'Nom'
+roles: 'Roles'
+apitoken: 'Api  Token'
+Dashboard: 'Tableau de bord'
+type: 'Type'
+question: "Question"
+Questions: "Questions"
+Question: "Question"
+ID: "ID"
+Title: 'Title'
+qustionconfig: "Par. Question"
+TitleQuestion: "Title Question"
+TypeQuestion: "Type Question"

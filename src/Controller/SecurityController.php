@@ -16,6 +16,7 @@ use Symfony\Component\Security\Csrf\CsrfTokenManagerInterface;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
 
 /**
+ * @Route("/{_locale}", requirements={"_locale" = "%app.locales%"})
  * Class SecurityController
  * @package App\Controller
  */

@@ -21,6 +21,7 @@ Encore
      * and one CSS file (e.g. app.css) if your JavaScript imports CSS.
      */
     .addEntry('base', './assets/script/base.js')
+    .addEntry('question', './assets/script/block/questions.js')
     .addStyleEntry('topmenupanel', './assets/styles/block/topmenupanel.scss')
 
     // enables the Symfony UX Stimulus bridge (used in assets/bootstrap.js)

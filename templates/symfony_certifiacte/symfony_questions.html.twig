@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello Symfony Quesions{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {{ encore_entry_link_tags('question') }}
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {{ encore_entry_script_tags('question') }}
+{% endblock %}
+
+
+{% block body %}
+    <div id="accordion">
+        {% for key,quiestion in questions %}
+            <div class="card">
+                <div class="card-header" id="heading{{ key }}">
+                    <h5 class="mb-0">
+                        <button class="btn" data-toggle="collapse" data-target="#collapse{{ key }}" aria-expanded="false" aria-controls="collapse{{ key }}">
+                            {{ quiestion.title }}
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapse{{ key }}" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        {% for quiestionstext in quiestion.question %}
+                            <div data="{{ quiestionstext.typequestion.type }}" class="questioncheck">{{ quiestionstext.question }}</div>
+                        {% endfor %}
+
+                        <div class="helpurl">{{ quiestion.helpurl }}</div>
+                        <button class="btn btn-success mt-3 mb-3 float-right questioncheckvalid">Valider</button>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}

@@ -27,6 +27,7 @@ class IndexController extends AbstractController
     }
 
 
+
     /**
      * @param Request $request
      * @return RedirectResponse

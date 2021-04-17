@@ -8,7 +8,7 @@
     <div class="col-md-3 text-right">
         <select class="selectpicker" onchange="location = this.value;">
             {% for key,value in locales %}
-                <option {% if app.request.locale == key %}selected{% endif%} value="{{ path(app.request.get('_route'), {'_locale': key}) }}">{{ value }}</option>
+                <option {% if app.request.locale == key %}selected{% endif%}  value="/{{ key }}{{ app.request.requestUri[3:] }}">{{ value }}</option>
             {% endfor %}
         </select>
     </div>
